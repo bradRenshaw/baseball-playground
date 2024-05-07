@@ -18,8 +18,7 @@ y_axis = "AVG"
 print(hitters)
 
 stl_hitters = hitters[(hitters['Team'] == "STL")]
-nonstl_hitters = hitters[(hitters['Team'] == "PIT")]
-# cin_hitters = hitters[(hitters['Team'] == "CIN")]
+nonstl_hitters = hitters[(hitters['Team'] != "STL")]
 
 plt.figure(figsize=(20, 20))  # Set the figure size
 
