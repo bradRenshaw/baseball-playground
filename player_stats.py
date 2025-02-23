@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from pybaseball import batting_stats
 from pybaseball import team_batting
-
+from openpyxl.styles import Font
 
 hitters = batting_stats(2024, qual=25)
 
@@ -56,5 +56,6 @@ for index, row in stl_hitters.iterrows():
 #     plt.text(row[x_axis], row[y_axis] + .01, row["Name"], fontsize=6, ha='center', va='bottom', fontfamily='roboto')
 
 plt.show()  # Show plot
+
 
 
